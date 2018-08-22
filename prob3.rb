@@ -13,6 +13,9 @@ vol = 0 #keeps track of total lake volume
 while start < (testCase.length-1)
 	puts "Start is #{start}"
 	stop = start + 1
+	if stop >= testCase.length
+		break
+	end
 	for i in (start+1)..(testCase.length-1)
 		if testCase[i] >= testCase[stop]
 			stop = i
